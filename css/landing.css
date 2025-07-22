@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+}
+
+.header-top-bar {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-bar .social-icons a {
+    color: #e9ee02; 
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.header-container {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo {
+    display: flex;
+    align-items: center; 
+}
+
+.header-container .logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.header-container h1 {
+    margin-left: 10px; 
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-container nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header-container nav ul li a {
+    color: #e9ee02;
+    text-decoration: none;
+}
+
+.hero-panel {
+    background-color: #e9ee02;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-action {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-action button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about, .services, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
