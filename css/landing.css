@@ -23,35 +23,10 @@ body {
     background-color: #ffffff; 
 }
 
-.header-top-bar {
-    background-color: #000000;
-    color: #ffffff; 
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.header-top-bar .social-icons {
-    color: #f7f7f7; 
-    margin-right: 20px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    gap: 15px;
-}
-
-.header-top-bar .social-icons a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
 .header-container {
     background-color: #000000; 
     color: #ffffff;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +39,7 @@ body {
 
 .header-container .logo img {
     width: 60px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .header-container h1 {
@@ -154,7 +129,6 @@ body {
     background-color: #d1d600;
 }
 
-
 .about, .services {
     padding: 20px;
     text-align: center;
@@ -164,10 +138,26 @@ body {
     text-align: center;
     padding: 10px;
 }
+
 .brands-list img {
     width: 100px;
     margin: 10px;
 }
+
+.about-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.acard {
+    color: #000000;
+    border-radius: 6px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
 
 .service-card {
     background-color: #000000;
@@ -179,7 +169,24 @@ body {
 
 footer {
     background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
+    color: #ffffff; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    color: #f7f7f7; 
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #e9ee02;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
