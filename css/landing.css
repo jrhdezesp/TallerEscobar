@@ -116,6 +116,13 @@ body {
     margin: 0 0 20px;
 }
 
+.card img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 .card button {
     background-color: #e9ee02;
     color: #000000;
@@ -158,7 +165,6 @@ body {
     text-align: center;
 }
 
-
 .service-card {
     background-color: #000000;
     color: #ffffff;
@@ -189,4 +195,54 @@ footer {
     color: #e9ee02;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-container .logo img {
+        width: 40px;
+    }
+
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .acard {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .card-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
