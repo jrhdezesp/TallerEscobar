@@ -27,16 +27,26 @@ body {
     align-items: center;
 }
 
-.header-top-bar .social-icons a {
-    color: #e9ee02; 
-    margin-right: 15px;
+.header-top-bar .social-icons {
+    color: #f7f7f7; 
+    margin-right: 20px;
     text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 15px;
+}
+
+.header-top-bar .social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 
 .header-container {
     background-color: #000000; 
     color: #ffffff;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +63,7 @@ body {
 }
 
 .header-container h1 {
-    margin-left: 10px; 
+    margin: 0px; 
     font-size: 1.6rem;
     display: flex;
     align-items: center;
@@ -72,7 +82,7 @@ body {
 }
 
 .header-container nav ul li a {
-    color: #e9ee02;
+    color: #ffffff;
     text-decoration: none;
 }
 
