@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+}
+
+.header-container {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo {
+    display: flex;
+    align-items: center; 
+}
+
+.header-container .logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.header-container h1 {
+    margin: 0px; 
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-container nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header-container nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero-panel {
+    background-color: #e9ee02;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-action {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-action button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-action button:hover {
+    background-color: #333333;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact-cards {
+    display: flex; /* Usar flexbox para las columnas */
+    flex-wrap: wrap; /* Permitir que las columnas se envuelvan */
+}
+
+.contact-form {
+    flex: 1; /* Ocupa el 50% del ancho */
+    min-width: 300px; /* Ancho mínimo para la columna del formulario */
+    padding: 20px;
+    margin: auto; /* Centrar verticalmente */
+}
+
+.contact-image {
+    flex: 1; /* Ocupa el 50% del ancho */
+    min-width: 300px; /* Ancho mínimo para la columna de la imagen */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%; /* Asegura que los inputs y selects ocupen el 100% del ancho */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 10px;
+    justify-content: flex-end; /* Alinear los botones al final */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background-color: #f44336; /* Color rojo para cancelar */
+    color: white;
+}
+
+.btn-confirmar {
+    background-color: #4CAF50; /* Color verde para enviar */
+    color: white;
+}
+
+.contact-image img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de su contenedor */
+    border-radius: 6px; /* Bordes redondeados para la imagen */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+.brands {
+    text-align: center;
+    padding: 10px;
+}
+
+.brands-list img {
+    width: 100px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    color: #f7f7f7; 
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #e9ee02;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-container .logo img {
+        width: 40px;
+    }
+
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}

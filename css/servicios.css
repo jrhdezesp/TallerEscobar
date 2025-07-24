@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+}
+
+.header-container {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo {
+    display: flex;
+    align-items: center; 
+}
+
+.header-container .logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.header-container h1 {
+    margin: 0px; 
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-container nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header-container nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero-panel {
+    background-color: #e9ee02;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-action {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-action button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-action button:hover {
+    background-color: #333333;
+}
+
+.services{
+    padding: 20px;
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    padding: 20px;
+}
+
+.scard {
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.scard i{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.service-card {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.brands {
+    text-align: center;
+    padding: 10px;
+}
+
+.brands-list img {
+    width: 100px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    color: #f7f7f7; 
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #e9ee02;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-container .logo img {
+        width: 40px;
+    }
+
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scard {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
