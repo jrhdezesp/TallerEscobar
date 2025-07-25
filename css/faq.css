@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -95,33 +96,36 @@ body {
     background-color: #333333;
 }
 
-.info-section {
+.faq-section {
     padding: 20px;
-    justify-content: center;
-    display: flex;
-    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo para la sección de FAQ */
 }
-.info-section h2 {
-    margin-bottom: 20px;
-}
-.info-card {
-    background-color: #f9f9f9; /* Fondo de la tarjeta */
-    border: 1px solid #ccc; /* Borde de la tarjeta */
-    border-radius: 5px; /* Bordes redondeados */
+
+.faq-item {
+    margin-bottom: 15px;
     padding: 15px;
-    margin: 10px; /* Espacio entre tarjetas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
-    width: 30%; /* Ancho de las tarjetas */
-    min-width: 250px; /* Ancho mínimo para las tarjetas */
-    text-align: center; /* Centrar texto en las tarjetas */
+    border: 1px solid #ccc; /* Borde alrededor de cada pregunta */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco para las preguntas */
+    transition: box-shadow 0.3s ease; /* Efecto de sombra al pasar el mouse */
 }
-.info-card h3 {
-    margin: 0 0 10px; /* Margen para el título de la tarjeta */
+
+.faq-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
 }
-.map-section {
-    padding: 20px;
-    text-align: center;
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 1.2rem; /* Tamaño de fuente para las preguntas */
+    color: #333; /* Color del texto de las preguntas */
 }
+
+.faq-item p {
+    margin: 5px 0 0; /* Margen para el párrafo de respuesta */
+    font-size: 1rem; /* Tamaño de fuente para las respuestas */
+    color: #666; /* Color del texto de las respuestas */
+}
+
 
 .brands {
     text-align: center;

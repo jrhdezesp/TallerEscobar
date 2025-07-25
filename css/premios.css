@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+}
+
+.header-container {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo {
+    display: flex;
+    align-items: center; 
+}
+
+.header-container .logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.header-container h1 {
+    margin: 0px; 
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-container nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header-container nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero-panel {
+    background-color: #e9ee02;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-action {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-action button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-action button:hover {
+    background-color: #333333;
+}
+
+.awards {
+    padding: 20px;
+    text-align: center;
+}
+
+.awards h2 {
+    margin-bottom: 20px;
+}
+
+.awards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan */
+    justify-content: center; /* Centrar las tarjetas */
+}
+
+.award-card {
+    background-color: #f9f9f9; /* Fondo de la tarjeta */
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px; /* Espacio entre tarjetas */
+    width: 30%; /* Ancho de las tarjetas */
+    min-width: 250px; /* Ancho mínimo para las tarjetas */
+    text-align: center; /* Centrar texto en las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+}
+
+.award-card img {
+    width: 100%; /* Imagen ocupa el 100% del ancho de la tarjeta */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-top-left-radius: 5px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 5px; /* Bordes redondeados en la parte superior */
+}
+
+.award-card h3 {
+    margin: 10px 0 0; /* Margen para el título de la tarjeta */
+}
+
+
+.brands {
+    text-align: center;
+    padding: 10px;
+}
+
+.brands-list img {
+    width: 100px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    color: #f7f7f7; 
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #e9ee02;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-container .logo img {
+        width: 40px;
+    }
+
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+}
