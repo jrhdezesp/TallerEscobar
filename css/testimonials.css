@@ -96,6 +96,48 @@ body {
     background-color: #333333;
 }
 
+.testimonials {
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan */
+    justify-content: center; /* Centrar las tarjetas */
+}
+
+.testimonial-card {
+    background-color: #f9f9f9; /* Fondo de la tarjeta */
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px; /* Espacio entre tarjetas */
+    width: 45%; /* Ancho de las tarjetas */
+    min-width: 900px; /* Ancho mínimo para las tarjetas */
+    display: flex; /* Usar flexbox para la disposición interna */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+}
+
+.car-image {
+    width: 100px; /* Ancho de la imagen del carro */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-right: 15px; /* Espacio entre la imagen y el contenido */
+}
+
+.testimonial-content {
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.testimonial-content h3 {
+    margin: 0; /* Sin margen para el nombre del cliente */
+}
+
+.date {
+    font-size: 0.9rem; /* Tamaño de fuente para la fecha */
+    color: #666; /* Color de la fecha */
+}
+
 .brands {
     text-align: center;
     padding: 10px;

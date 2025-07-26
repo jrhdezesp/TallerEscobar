@@ -173,6 +173,19 @@ body {
     border-radius: 5px;
 }
 
+.service-card button {
+    background-color: #e9ee02;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-card button:hover {
+    background-color: #d1d600;
+}
+
 .brands {
     text-align: center;
     padding: 10px;

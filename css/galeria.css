@@ -96,6 +96,59 @@ body {
     background-color: #333333;
 }
 
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cuadrícula responsiva */
+    gap: 15px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.gallery-item {
+    position: relative; /* Para posicionar el caption sobre la imagen */
+    overflow: hidden; /* Para ocultar el contenido que sobresale */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.gallery-item img {
+    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    transition: transform 0.3s ease; /* Efecto de zoom al pasar el mouse */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+.gallery-caption {
+    position: absolute; /* Posicionar el caption sobre la imagen */
+    bottom: 0; /* Alinear al fondo */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: #ffffff; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.gallery-caption h3 {
+    margin: 0; /* Sin margen para el título */
+    font-size: 1.1rem; /* Tamaño de fuente para el título */
+}
+
+.gallery-caption p {
+    margin: 5px 0 0; /* Margen para el comentario */
+    font-size: 0.9rem; /* Tamaño de fuente para el comentario */
+}
+
+
 .brands {
     text-align: center;
     padding: 10px;
