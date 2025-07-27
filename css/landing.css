@@ -269,3 +269,120 @@ footer {
         margin-bottom: 20px;
     }
 }
+.carusel {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background: transparent; 
+}
+
+.carusel .carusel-track{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    transition: transform 0.7s ease-in-out;
+}
+
+.carusel .carusel-track .carusel-slide {
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    width: 100vw;
+    height: 480px;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+
+.carusel .carusel-track .carusel-slide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.carusel .carusel-track .carusel-slide .carusel-action {
+    padding: 1rem;
+    border-radius: 9px;
+    background-color: #aaa; 
+    position: absolute;
+    width: 380px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;
+    gap: 10px;                   
+}
+.carusel .carusel-track .carusel-slide .carusel-action h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.carusel .carusel-track .carusel-slide .carusel-action img {
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: contain;
+}
+.carusel .carusel-btn-pre, .carusel .carusel-btn-nxt {
+    position: absolute;
+    top:50%;
+    width: 4rem;
+    height: 6rem;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem 0.8rem;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    cursor: pointer;
+}
+.carusel .carusel-btn-pre:hover, .carusel .carusel-btn-nxt:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+.carusel .carusel-btn-nxt {
+    right:0px;
+}
+
+.carusel .carusel-dots {
+    position: absolute;
+    width:100%;
+    display: flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    padding:0.25rem;
+}
+
+.carusel .carusel-dots .carusel-dot {
+    width:16px;
+    height: 16px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.carusel .carusel-dots .carusel-dot.active {
+    background-color: #fff; /* O el color que desees */
+    border: 2px solid #000; /* Para dar contraste */
+}
+
+
+
+@media (min-width:720px) {
+    .carusel .carusel-track .carusel-slide{
+        height: 680px;
+    }
+}
+
+@media (min-width:1025px) {
+    .carusel .carusel-track .carusel-slide{
+        height: 720px;
+    }
+}
