@@ -11,6 +11,9 @@ html {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 body {
@@ -103,39 +106,39 @@ body {
 
 .testimonial-cards {
     display: flex;
-    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan */
-    justify-content: center; /* Centrar las tarjetas */
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .testimonial-card {
-    background-color: #f9f9f9; /* Fondo de la tarjeta */
-    border: 1px solid #ccc; /* Borde de la tarjeta */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 10px; /* Espacio entre tarjetas */
-    width: 45%; /* Ancho de las tarjetas */
-    min-width: 900px; /* Ancho mínimo para las tarjetas */
-    display: flex; /* Usar flexbox para la disposición interna */
-    padding: 15px; /* Espaciado interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px; 
+    width: 45%; 
+    min-width: 900px; 
+    display: flex; 
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .car-image {
-    width: 100px; /* Ancho de la imagen del carro */
-    height: auto; /* Mantener la proporción de la imagen */
-    margin-right: 15px; /* Espacio entre la imagen y el contenido */
+    width: 100px; 
+    height: auto; 
+    margin-right: 15px; 
 }
 
 .testimonial-content {
-    text-align: left; /* Alinear el texto a la izquierda */
+    text-align: left; 
 }
 
 .testimonial-content h3 {
-    margin: 0; /* Sin margen para el nombre del cliente */
+    margin: 0; 
 }
 
 .date {
-    font-size: 0.9rem; /* Tamaño de fuente para la fecha */
-    color: #666; /* Color de la fecha */
+    font-size: 0.9rem; 
+    color: #666; 
 }
 
 .brands {
@@ -203,4 +206,42 @@ footer {
         font-size: 0.8rem;
     }
 
+}
+
+.carusel-marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 1rem 0;
+}
+
+.carusel-track {
+    display: flex;
+    animation: scroll-marquee 60s linear infinite;
+    width: fit-content;
+}
+
+.carusel-slide {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.carusel-slide img {
+    max-width: 50%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }

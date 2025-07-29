@@ -198,3 +198,41 @@ footer {
     }
 
 }
+
+.carusel-marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 1rem 0;
+}
+
+.carusel-track {
+    display: flex;
+    animation: scroll-marquee 60s linear infinite;
+    width: fit-content;
+}
+
+.carusel-slide {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.carusel-slide img {
+    max-width: 50%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
