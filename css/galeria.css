@@ -110,45 +110,45 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cuadrícula responsiva */
-    gap: 15px; /* Espacio entre los elementos de la cuadrícula */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .gallery-item {
-    position: relative; /* Para posicionar el caption sobre la imagen */
-    overflow: hidden; /* Para ocultar el contenido que sobresale */
-    border-radius: 5px; /* Bordes redondeados */
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .gallery-item img {
-    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
-    transition: transform 0.3s ease; /* Efecto de zoom al pasar el mouse */
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05); /* Efecto de zoom */
+    transform: scale(1.05);
 }
 
 .gallery-caption {
-    position: absolute; /* Posicionar el caption sobre la imagen */
-    bottom: 0; /* Alinear al fondo */
+    position: absolute;
+    bottom: 0; 
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
-    color: #ffffff; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    text-align: left; /* Alinear texto a la izquierda */
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff; 
+    padding: 10px; 
+    text-align: left; 
 }
 
 .gallery-caption h3 {
-    margin: 0; /* Sin margen para el título */
-    font-size: 1.1rem; /* Tamaño de fuente para el título */
+    margin: 0; 
+    font-size: 1.1rem; 
 }
 
 .gallery-caption p {
-    margin: 5px 0 0; /* Margen para el comentario */
-    font-size: 0.9rem; /* Tamaño de fuente para el comentario */
+    margin: 5px 0 0;
+    font-size: 0.9rem; 
 }
 
 
@@ -217,6 +217,39 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-container .logo img {
+        width: 40px;
+    }
+
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+}
+
 
 .carusel-marquee {
     width: 100%;
