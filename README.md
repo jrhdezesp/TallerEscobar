@@ -1,9 +1,11 @@
-<table>
-  <tr>
-    <td><img src="/images/logow.png" alt="Logo Taller" width="80"></td>
-    <td><h1>Sitio Web de Taller Escobar (2025)</h1></td>
-  </tr>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="/images/logow.png" alt="Logo Taller" width="80"></td>
+      <td><h1>Sitio Web de Taller Escobar (2025)</h1></td>
+    </tr>
+  </table>
+</div>
 
 Este repositorio contiene el código fuente del sitio web oficial del taller automotriz, diseñado para ofrecer una experiencia informativa, accesible y moderna para clientes que buscan servicios de mantenimiento y reparación vehicular.
 
@@ -19,8 +21,8 @@ El sitio está compuesto por **10 páginas** principales, cada una con un propó
 6. **Premios y Reconocimientos (`premios.html`)**  
 7. **Galería de Proyectos (`galeria.html`)**  
 8. **Testimonios (`testimonios.html`)**  
-9. **Proceso de Trabajo (`proctrabajo/trabajo.html`)**  
-10. **Guía de Diagnóstico (`diagnostico/diagnostico.html`)**
+9. **Proceso de Trabajo (`trabajo.html`)**  
+10. **Guía de Diagnóstico (`diagnostico.html`)**
 
 ## Tecnologías Utilizadas
 
