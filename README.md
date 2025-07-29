@@ -1,6 +1,9 @@
-![Logo Taller](/images/logow.png)
-
-# Sitio Web de Taller Escobar (2025)
+<table>
+  <tr>
+    <td><img src="/images/logow.png" alt="Logo Taller" width="80"></td>
+    <td><h1>Sitio Web de Taller Escobar (2025)</h1></td>
+  </tr>
+</table>
 
 Este repositorio contiene el código fuente del sitio web oficial del taller automotriz, diseñado para ofrecer una experiencia informativa, accesible y moderna para clientes que buscan servicios de mantenimiento y reparación vehicular.
 
