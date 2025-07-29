@@ -228,3 +228,12 @@ footer {
         font-size: 0.8rem;
     }
 }
+.input-error {
+    border: 2px solid red;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
