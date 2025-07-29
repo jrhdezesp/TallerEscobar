@@ -100,20 +100,20 @@ body {
 }
 
 .contact-cards {
-    display: flex; /* Usar flexbox para las columnas */
-    flex-wrap: wrap; /* Permitir que las columnas se envuelvan */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-form {
-    flex: 1; /* Ocupa el 50% del ancho */
-    min-width: 300px; /* Ancho mínimo para la columna del formulario */
+    flex: 1;
+    min-width: 300px;
     padding: 20px;
-    margin: auto; /* Centrar verticalmente */
+    margin: auto;
 }
 
 .contact-image {
-    flex: 1; /* Ocupa el 50% del ancho */
-    min-width: 300px; /* Ancho mínimo para la columna de la imagen */
+    flex: 1;
+    min-width: 300px;
 }
 
 .form-group {
@@ -126,7 +126,7 @@ body {
 }
 
 input, select {
-    width: 100%; /* Asegura que los inputs y selects ocupen el 100% del ancho */
+    width: 100%;
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -135,9 +135,9 @@ input, select {
 .form-buttons {
     display: flex;
     flex-direction: row;
-    gap: 10px; /* Espacio entre los botones */
+    gap: 10px;
     margin-top: 10px;
-    justify-content: flex-end; /* Alinear los botones al final */
+    justify-content: flex-end;
 }
 
 button {
@@ -148,19 +148,19 @@ button {
 }
 
 .btn-cancelar {
-    background-color: #f44336; /* Color rojo para cancelar */
+    background-color: #f44336;
     color: white;
 }
 
 .btn-confirmar {
-    background-color: #4CAF50; /* Color verde para enviar */
+    background-color: #4CAF50;
     color: white;
 }
 
 .contact-image img {
-    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de su contenedor */
-    border-radius: 6px; /* Bordes redondeados para la imagen */
-    object-fit: cover; /* Mantener la proporción de la imagen */
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 .brands {
@@ -226,6 +226,34 @@ footer {
         flex-direction: row;
         justify-content: center;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+
+    .hero-panel h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-action {
+        padding: 15px;
+    }
+
+    .hero-action button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .contact-form, .contact-image {
+        flex: 1;
+        min-width: 100%;
+        padding: 10px;
     }
 }
 .input-error {
