@@ -7,6 +7,7 @@
     <title>Taller Mecánico Escobar</title>
     <link rel="stylesheet" href="/css/faq.css" />
     <script src="/js/CaruselBrands.js"></script>
+    <script src="/js/validacionesFAQ.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,6 +79,18 @@
                 <p>Si experimentas algún problema, por favor contáctanos de inmediato para que podamos ayudarte.</p>
             </div>
         </section>
+
+        <section class="comentarios-section">
+            <h3>¿Tienes preguntas? Comenta tu duda y la responderemos con gusto.</h3>
+            <form id="form-comentario">
+                <textarea id="comentario" placeholder="Escribe tu pregunta aquí (máx. 150 caracteres)" maxlength="150" required></textarea>
+                <div class="botones-form">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+
 
         <section class="carusel-marquee">
             <div class="carusel-track">

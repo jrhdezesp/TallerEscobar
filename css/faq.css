@@ -129,6 +129,66 @@ body {
     color: #666;
 }
 
+.comentarios-section {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.comentarios-section h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#form-comentario {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#comentario {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.botones-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botones-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones-form button:hover {
+    background-color: #333;
+}
+
+#comentario.input-error {
+    border-color: red;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 0.9rem;
+}
 
 .brands {
     text-align: center;
