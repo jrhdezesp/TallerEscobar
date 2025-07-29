@@ -11,6 +11,9 @@ html {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 body {
@@ -19,7 +22,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background-color: #ffffff; 
 }
 
@@ -84,6 +86,8 @@ body {
 }
 
 .hero-action button {
+    margin: 20px;
+    font-size: 1rem;
     background-color: #000000;
     color: #ffffff;
     border: none;
@@ -403,11 +407,9 @@ footer {
     border-radius: 50%;
 }
 .carusel .carusel-dots .carusel-dot.active {
-    background-color: #fff; /* O el color que desees */
-    border: 2px solid #000; /* Para dar contraste */
+    background-color: #fff;
+    border: 2px solid #000;
 }
-
-
 
 @media (min-width:720px) {
     .carusel .carusel-track .carusel-slide{
@@ -417,6 +419,6 @@ footer {
 
 @media (min-width:1025px) {
     .carusel .carusel-track .carusel-slide{
-        height: 720px;
+        height: 400px;
     }
 }

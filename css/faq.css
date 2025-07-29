@@ -12,6 +12,9 @@ html {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 body {
@@ -98,32 +101,32 @@ body {
 
 .faq-section {
     padding: 20px;
-    background-color: #f9f9f9; /* Color de fondo para la sección de FAQ */
+    background-color: #f9f9f9;
 }
 
 .faq-item {
     margin-bottom: 15px;
     padding: 15px;
-    border: 1px solid #ccc; /* Borde alrededor de cada pregunta */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #ffffff; /* Fondo blanco para las preguntas */
-    transition: box-shadow 0.3s ease; /* Efecto de sombra al pasar el mouse */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
 }
 
 .faq-item:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .faq-item h3 {
     margin: 0;
-    font-size: 1.2rem; /* Tamaño de fuente para las preguntas */
-    color: #333; /* Color del texto de las preguntas */
+    font-size: 1.2rem;
+    color: #333;
 }
 
 .faq-item p {
-    margin: 5px 0 0; /* Margen para el párrafo de respuesta */
-    font-size: 1rem; /* Tamaño de fuente para las respuestas */
-    color: #666; /* Color del texto de las respuestas */
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #666;
 }
 
 
@@ -191,5 +194,26 @@ footer {
         justify-content: center;
         font-size: 0.8rem;
     }
+}
 
+@media (max-width: 480px) {
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+
+    .hero-panel h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-action {
+        padding: 15px;
+    }
+
+    .hero-action button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }

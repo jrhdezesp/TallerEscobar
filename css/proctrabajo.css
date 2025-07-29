@@ -111,28 +111,28 @@ body {
 
 .process-steps {
     display: flex;
-    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan */
-    justify-content: center; /* Centrar las tarjetas */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .process-card {
-    background-color: #f9f9f9; /* Fondo de la tarjeta */
-    border: 1px solid #ccc; /* Borde de la tarjeta */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 10px; /* Espacio entre tarjetas */
-    width: 30%; /* Ancho de las tarjetas */
-    min-width: 250px; /* Ancho mínimo para las tarjetas */
-    text-align: center; /* Centrar texto en las tarjetas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
-    padding: 15px; /* Espaciado interno */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
 .process-card h4 {
-    margin: 10px 0; /* Margen para el título de la tarjeta */
+    margin: 10px 0;
 }
 
 .process-card p {
-    margin: 0; /* Sin margen para el párrafo */
+    margin: 0;
 }
 
 
@@ -200,5 +200,26 @@ footer {
         justify-content: center;
         font-size: 0.8rem;
     }
+}
 
+@media (max-width: 480px) {
+    .header-container nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+
+    .hero-panel h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-action {
+        padding: 15px;
+    }
+
+    .hero-action button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
