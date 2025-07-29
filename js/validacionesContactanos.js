@@ -62,4 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     }
+
+
+    formulario.addEventListener('reset', function () {
+    limpiarErrores(); 
+});
 });
