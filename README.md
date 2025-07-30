@@ -9,10 +9,10 @@
 
 ## Integrantes
 
-Coordinador - Jose Ramon Hernandez Espinal - 0801200306613 - jrhdezesp
-Salvador Adrian Romero Bueso - 0318200502081 - Sadri29gb
-Carlos Gustavo Luna Acosta - 0301200402911 - CGLuna45
-Pablo Roberto Calix Martínez - 1501200401389 - Psukuna
+1. Coordinador - Jose Ramon Hernandez Espinal - 0801200306613 - jrhdezesp
+2. Salvador Adrian Romero Bueso - 0318200502081 - Sadri29gb
+3. Carlos Gustavo Luna Acosta - 0301200402911 - CGLuna45
+4. Pablo Roberto Calix Martínez - 1501200401389 - Psukuna
 
 Este repositorio contiene el código fuente del sitio web oficial del taller automotriz, diseñado para ofrecer una experiencia informativa, accesible y moderna para clientes que buscan servicios de mantenimiento y reparación vehicular.
 
